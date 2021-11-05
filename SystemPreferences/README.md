@@ -21,11 +21,10 @@ suggestions. Always choose the setting that makes the most sense to you.**
 
 - _Point & Click_
   - Enable _Tap to click with one finger_
-  - Change _Secondary click_ to _Right corner_
+  - Change _Secondary click_ to _Left corner_
   - Check Silent Clicking
 
 - _Scroll & Zoom_
-  - Uncheck _all_ apart from _Zoom in and out_
   - Uncheck _Rotate with two finders_
 
 - Accessibility > Pointer Control > Mouse & Trackpad
