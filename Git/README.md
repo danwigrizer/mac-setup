@@ -6,13 +6,13 @@ What's a developer without [Git](http://git-scm.com/)? To install, run:
 brew install git
 ```
 
-When done, to test that it installed properly you can run:
+When done, restart terminal to test that it installed properly you can run:
 
 ```sh
 git --version
 ```
 
-And `which git` should output `/usr/local/bin/git`.
+And `which git` should output `/opt/homebrew/bin/git` (New to Mac M1).
 
 Next, we'll define your Git user (should be the same name and email you use for [GitHub](https://github.com/)):
 
