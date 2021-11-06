@@ -32,6 +32,9 @@ Homebrew suggests running:
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/danwigrizer/.zprofile 
 eval "$(/opt/homebrew/bin/brew shellenv)" 
 ```
+- You need to amend your PATH, so that the versions of tools that are installed with Homebrew take precedence over others
+
+Restart terminal
 
 Then, to be able to use `brew` you need to start a new terminal session. After that
 you should make sure everything is working by running:
@@ -39,6 +42,14 @@ you should make sure everything is working by running:
 ```sh
 brew doctor
 ```
+
+also check path:
+
+```sh
+echo $PATH
+```
+to see if /opt/homebrew/bin is at the top. 
+
 
 If everything is good, you should see no warnings, and a message that you are
 "ready to brew!".
