@@ -4,7 +4,7 @@
 
 - [1Password](https://agilebits.com/onepassword)
 - [Onenote](https://apps.apple.com/us/app/microsoft-onenote/id784801555?mt=12)
-- [Caffeinated] (https://caffeinated.app) 
+- [Caffeinated](https://caffeinated.app) 
 
 # Brew Casks
 
@@ -16,7 +16,7 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications --fontdir=/Library/Fonts"
 ```
 
 ## Work
-slack
+Slack, Rectangle, Alfred, Chrome, Firefox, Alfred - All M1
 
 ```sh
 brew install --cask \
