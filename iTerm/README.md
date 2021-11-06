@@ -16,7 +16,8 @@ brew install --cask iterm2
 
 Here are some suggested settings you can change or set, **they are all optional**.
 
-- Set hot-key to open and close the terminal to `command + option + i`
+** Did not use on Mac m1 setup***
+- Set hot-key to open and close the terminal to command + option + i
 - Go to profiles -> Default -> Terminal -> Check silence bell to disable the terminal session from making any sound
 - Download [one of iTerm2 color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes) and then set these to your default profile colors
 - Change the cursor text and cursor color to yellow make it more visible
