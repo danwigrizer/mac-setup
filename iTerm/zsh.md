@@ -98,7 +98,7 @@ More info: https://github.com/sb2nov/mac-setup/issues/89
 To include `env.sh`, open `~/.zshrc` and add the following:
 
 ```sh
-source ~/<path to file>/env.sh
+source ~/env.sh
 ```
 
 This file comes with some pre-defined settings, **they are all optional**.
