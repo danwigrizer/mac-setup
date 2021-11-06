@@ -1,23 +1,6 @@
-# zsh
-
-The Z shell (also known as `zsh`) is a Unix shell that is built on top of `bash`
-(the default shell for macOS) with additional features. It's recommended to use
-`zsh` over `bash`. It's also highly recommended to install a framework with
-`zsh` as it makes dealing with configuration, plugins and themes a lot nicer.
-
-We've also included an `env.sh` file where we store our aliases, exports, path
-changes etc. We put this in a separate file to not pollute our main
-configuration file too much. This file is found in the bottom of this page.
-
-Install `zsh` using Homebrew:
-
-```sh
-brew install zsh
-```
 
 Now you should install a framework, we recommend to use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-or [Prezto](https://github.com/sorin-ionescu/prezto). **Note that you should
-pick one of them, not use both.**
+
 
 The configuration file for `zsh` is called `.zshrc` and lives in your home
 folder (`~/.zshrc`).
@@ -34,12 +17,16 @@ Install Oh My Zsh:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-The installation script should set `zsh` to your default shell, but if it
-doesn't you can do it manually:
+## powerlevel10k
 
+- Download [powerlevel10k](https://github.com/romkatv/powerlevel10k#instant-prompt)
+- Clone the repository:
 ```sh
-chsh -s $(which zsh)
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
+
+- Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
+- p10k configure can install the recommended font for you. Simply answer Yes when asked whether to install Meslo Nerd Font.
 
 ### Configuration
 
@@ -87,6 +74,14 @@ Clone the zsh-autosuggestions plugin’s repo and copy it to the “Oh My ZSH”
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
+
+## Other plugins added
+
+1. pip
+2. python
+
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting pip python)
+
 ##### Enforce Changes
 
 To apply the changes you make you need to either **start new shell instance**
@@ -94,80 +89,6 @@ or run:
 
 ```sh
 source ~/.zshrc
-```
-
-#### Themes
-
-Changing theme is as simple as changing a string in your configuration file.
-The default theme is `robbyrussell`. Just change that value to change theme,
-and don't forget to apply your changes.
-
-```sh
-ZSH_THEME=pygmalion
-```
-
-You'll find a list of themes with screenshots on the
-[Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/themes).
-
-## Prezto
-
-[Prezto](https://github.com/sorin-ionescu/prezto) is a configuration framework
-for `zsh`; it enriches the command line interface environment with sane
-defaults, aliases, functions, auto completion, and prompt themes.
-
-Install Prezto:
-
-```sh
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-```
-
-Next create your `~/.zshrc` by running:
-
-```sh
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-  done
-```
-
-For more information on customisation visit the [GitHub repository for
-Prezto](https://github.com/sorin-ionescu/prezto).
-
-### Modules
-
-Add modules to Prezto by editing `~/.zpreztorc` and adding the modules as
-strings to the list:
-
-```sh
-zstyle ':prezto:load' pmodule \
-  'environment' \
-  'terminal' \
-  'editor' \
-  'history' \
-  'directory' \
-  'spectrum' \
-  'utility' \
-  'completion' \
-  'git' \
-  'syntax-highlighting' \
-  'history-substring-search' \
-  'prompt'
-```
-
-And don't forget to apply your changes by **starting a new shell instance**.
-
-### Themes
-
-To list all available themes run:
-
-```sh
-prompt -l
-```
-
-Then open up your config file (`~/.zpreztorc`) and change to the theme you want:
-
-```sh
-zstyle ':prezto:module:prompt' theme 'minimal'
 ```
 
 ## `env.sh`
