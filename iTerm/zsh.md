@@ -93,6 +93,8 @@ source ~/.zshrc
 
 ## `env.sh`
 
+More info: https://github.com/sb2nov/mac-setup/issues/89
+
 To include `env.sh`, open `~/.zshrc` and add the following:
 
 ```sh
@@ -107,7 +109,7 @@ examples to show you what you can customise in your shell.
 #!/bin/zsh
 
 # Add commonly used folders to $PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Specify default editor. Possible values: vim, nano, ed etc.
 export EDITOR=vim
