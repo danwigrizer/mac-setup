@@ -4,7 +4,7 @@
 
 - [1Password](https://agilebits.com/onepassword)
 - [Onenote](https://apps.apple.com/us/app/microsoft-onenote/id784801555?mt=12)
-- [Caffeinated](https://caffeinated.app) 
+- [Amphetimine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) 
 
 # Brew Casks
 
