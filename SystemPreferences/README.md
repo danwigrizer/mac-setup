@@ -107,6 +107,10 @@ killall Dock # Restart the Dock process
 - Screen Saver
   - Set Show screen saver after '5 minutes' 
 
+## Battery 
+- Turn Display off after 15 minutes
+- (Optional) Turn on low battery mode while on battery
+
 ## User Defaults
 
 - Enable _repeating keys by pressing and holding down keys_: `defaults write
