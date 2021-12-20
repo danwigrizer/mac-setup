@@ -15,14 +15,15 @@ suggestions. Always choose the setting that makes the most sense to you.**
 ## Users & Groups
 
 - _Login Options_ -> _Change fast user switching menu as Icon_
-- Set up _Password_, _Apple ID_, _Picture_, etc.
+- Set up _Password_, _Apple ID_, _Picture_, etc. (Not sure what this means?)
 
 ## Trackpad
 
 - _Point & Click_
   - Enable _Tap to click with one finger_
   - Change _Secondary click_ to _Left corner_
-  - Check Silent Clicking
+  - Check Silent Clicking (Gone in monterey?)
+  - Increase scrool speedd to one beyond middle
 
 - _Scroll & Zoom_
   - Uncheck _Rotate with two finders_
@@ -32,6 +33,8 @@ suggestions. Always choose the setting that makes the most sense to you.**
   - Trackpad Options: (Experimenting with this feature) Increase scrolling speed to second fastest
 
 ## Dock
+
+- Remove all non-used apps
 
 - _Visual Settings_
   - Reduce dock size to small
@@ -53,6 +56,8 @@ killall Dock # Restart the Dock process
 - F1, F2 Keys
   - Check _Use F1, F2, etc keys as standard function keys on external keyboards_
 
+- Turn Keyboard backlight light off after 5 mins of inactivity
+
 ## Folder Organization
 - New Folders
   - Add new code directory named _dev_ in home directory
@@ -62,12 +67,13 @@ killall Dock # Restart the Dock process
 - General
   - Change _New finder window show_ to open in your _Home Directory_
 - Sidebar
-  - Add _Home_ and your _Code Directory_
+  - Add _Home_ 
   - Uncheck all _Shared_ boxes
 
 ## Menubar
 
 - Change _battery_ to _Show percentage symbols_ (Dock & Menubar > Battery > _Show Percentage_ 
+- Remove fast user switching Dock & Menubar > Battery > _Fast User Switching_
 
 ## Spotlight (Potentially remove)
 
@@ -79,7 +85,7 @@ killall Dock # Restart the Dock process
 ## Accounts
 
 - Add an _iCloud account_ and sync _Calendar_, _Find my Mac_, _Contacts_ etc, 
-- Work Computer: turn off Photos
+- Work Computer: turn off Photos (didn't turn on initially for personal computer)
 
 ## Security [2][3]
 
