@@ -16,6 +16,7 @@ suggestions. Always choose the setting that makes the most sense to you.**
 
 - _Login Options_ -> _Change fast user switching menu as Icon_
 - Set up _Password_, _Apple ID_, _Picture_, etc. (Not sure what this means?)
+- Media & Purchases -> Enable purchases with touchid
 
 ## Trackpad
 
