@@ -1,6 +1,6 @@
 # Git and GitHub
 
-What's a developer without [Git](http://git-scm.com/)? To install, run:
+To install, run:
 
 ```sh
 brew install git
@@ -12,7 +12,7 @@ When done, to test that it installed properly you can run:
 git --version
 ```
 
-And `which git` should output `/usr/local/bin/git`.
+And `which git` should output `/opt/homebrew/bin/git`.
 
 Next, we'll define your Git user (should be the same name and email you use for [GitHub](https://github.com/)):
 
@@ -25,13 +25,26 @@ They will get added to your `.gitconfig` file.
 
 To push code to your GitHub repositories, we will use the recommended HTTPS method. There are also instructions for using SSH. To prevent `git` from asking for your username and password every time you push a commit you can cache your credentials by running the following command, as described in the [instructions](https://help.github.com/articles/caching-your-github-password-in-git/).
 
+## setup credentials
+
+```sh 
+brew install gh```
 ```sh
-git config --global credential.helper osxkeychain
+gh auth login```
+
+When prompted for your preferred protocol for Git operations, select HTTPS.
+When asked if you would like to authenticate to Git with your GitHub credentials, enter Y.
+
+
+## Setup up gitignore
+
+create  ~/dev/.gitignore
+add these contents https://www.toptal.com/developers/gitignore/api/macos,python,visualstudiocode,visualstudio,venv
+run 
+```sh
+git config --global core.excludesfile ~/.gitignore
 ```
 
-## Using HTTPS for GitHub (recommended)
-
-These instructions are from [the official documentation](https://help.github.com/en/github/using-git/which-remote-url-should-i-use#cloning-with-https-urls-recommended).
 
 ### Clone repositories using HTTPS
 
