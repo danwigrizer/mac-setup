@@ -43,22 +43,10 @@ Here are some useful apps that are available on Cask.
 ```sh
 brew install --cask \
     alfred \
-    android-file-transfer \
-    appcleaner \
-    caffeine \
+    amphetamine \
     cheatsheet \
-    colloquy \
-    docker \
-    doubletwist \
-    dropbox \
     google-chrome \
-    google-hangouts \
-    flux \
     1password \
     rectangle \
     sublime-text \
-    superduper \
-    transmission \
-    valentina-studio \
-    vlc
 ```
