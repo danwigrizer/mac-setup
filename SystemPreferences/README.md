@@ -22,7 +22,7 @@ suggestions. Always choose the setting that makes the most sense to you.**
 
 - _Point & Click_
   - Enable _Tap to click with one finger_
-  - Change _Secondary click_ to _Left corner_
+  - Click with two fingers to right click ~Change _Secondary click_ to _Left corner_~
   - Check Silent Clicking (Gone in monterey?)
   - Increase scrool speedd to one beyond middle
 
