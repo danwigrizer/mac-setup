@@ -19,7 +19,7 @@ Besides the official docs, the best guide to pyenv I could find is [this one by 
 
 ```sh
 # https://github.com/pyenv/pyenv/wiki#suggested-build-environment
-brew update && brew install readline sqlite3 xz zlib openssl
+brew install openssl readline sqlite3 xz zlib tcl-tk
 ```
 
 *openssl*
