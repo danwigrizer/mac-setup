@@ -93,6 +93,18 @@ To upgrade `pyenv` in the future, use `upgrade` instead of `install`.
 
 After installing, add `pyenv init` to your shell to enable shims and autocompletion:
 
+> Added from offiicial repo for Pyenv. Used for work componuter 6/20 [Source](Understanding PATH](https://github.com/pyenv/pyenv/edit/master/README.md)
+
+- For **Zsh**:
+    ~~~ zsh
+    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+    echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+    echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+    ~~~
+
+    If you wish to get Pyenv in noninteractive login shells as well, also add the commands to `~/.zprofile` or `~/.zlogin`.
+
+* Older version of this, still may work
 ```sh
 echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 
